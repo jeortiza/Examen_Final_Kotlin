@@ -53,3 +53,30 @@ fun main() {
 #### ERROR: La variable nombre es declarada indicando que es de tipo String (val nombre: String) , pero se intenta imprimir (println(nombre)) sin haberle asignado nunca un valor.
 
 #### SOLUCIÓN: Kotlin requiere que las variables estén inicializadas (que tengan un valor asignado) antes de ser utilizadas para evitar errores de valores nulos (NullPointerException).
+
+
+
+## 4. EJERCICIO #4 - ERROR EN LA CONDICION LOGICA
+
+#### 4.1 CODIGO CORREGIDO
+fun main() {
+    val nota = 15
+    when {
+        nota >= 11 -> println("Aprobado")
+        else -> println("Desaprobado")
+    }
+}
+
+#### 4.2 RESULTADO
+<img width="254" height="52" alt="image" src="https://github.com/user-attachments/assets/219cc53a-7516-4855-b544-8393736caf8a" />
+
+
+#### 4.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: La estructura when(nota) recibe la variable nota como argumento , pero dentro de las opciones se están evaluando expresiones booleanas como nota >= 11. Esto no es válido cuando when recibe un argumento directo.
+
+#### SOLUCIÓN: Para usar condiciones lógicas (como mayor o menor que) dentro de un when, debes omitir el argumento en los paréntesis de la declaración del when. De esta forma, actuará como una cadena de sentencias if-else.
+
+
+
+
+
