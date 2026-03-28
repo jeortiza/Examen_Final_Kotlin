@@ -147,6 +147,25 @@ fun main() {
 
 
 
+## 8. EJERCICIO #8 - ERROR AL MOMENTO EN LA FUNCIÓN
+
+#### 8.1 CODIGO CORREGIDO
+fun saludo(): String { 
+    return "10" 
+}
+
+fun main() {
+    println(saludo())
+}
+
+#### 8.2 RESULTADO
+<img width="288" height="59" alt="image" src="https://github.com/user-attachments/assets/5222c30e-e931-46c2-a680-1867641e6e68" />
+
+
+#### 8.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: solo se define la estructura de la función saludo(), pero no se incluye una función main()
+
+#### SOLUCIÓN: se debe agregar la función main() e invocar a tu función dentro de ella.
 
 
 
