@@ -191,3 +191,21 @@ fun main() {
 
 
 
+## 10. EJERCICIO #10 - ERROR EN EL VAR
+
+#### 10.1 CODIGO CORREGIDO
+fun main() {
+    var x = 10
+    x = 20 
+    println(x) 
+}
+
+#### 10.2 RESULTADO
+<img width="330" height="62" alt="image" src="https://github.com/user-attachments/assets/a29427e4-cdc7-4f61-865f-7e638171801e" />
+
+
+#### 10.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: Se está intentando crear (declarar) una nueva variable llamada x cuando ya existe otra variable llamada exactamente igual en el mismo bloque de código (var x = 10 y luego var x = 20). El compilador prohíbe esto por ambigüedad.
+
+#### SOLUCIÓN: El nombre de una variable es un identificador único dentro de su bloque (su zona entre llaves). Para actualizar el dato que guarda una variable que ya fue declarada previamente, debes referenciarla solo por su nombre, sin volver a usar la palabra reservada de creación var. La solución es escribir simplemente x = 20. (Y recuerda el detalle de tu segunda captura: para quitar la advertencia amarilla, es buena práctica usar la variable imprimiéndola).
+
