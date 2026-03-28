@@ -18,6 +18,7 @@ fun main() {
 #### SOLUCIÓN: Para poder modificar el valor de una variable después de su inicialización, debes declararla usando la palabra clave var
 
 
+
 ## 2. EJERCICIO #2 - ERROR EN AL MOMENTO DE HACER COMPARACIONES E IGUALDADES
 
 #### 2.1 CODIGO CORREGIDO
@@ -36,3 +37,19 @@ fun main() {
 #### SOLUCIÓN: Para comparar si dos valores son iguales, debes usar el operador de igualdad que consta de dos signos iguales (==)
 
 
+
+## 3. EJERCICIO #3 - ERROR EN AL DECLARAR LA VARIABLE NOMBRE
+
+#### 3.1 CODIGO CORREGIDO
+fun main() {
+    val nombre: String = "Junior"
+    println(nombre)
+}
+
+#### 3.2 RESULTADO
+<img width="242" height="49" alt="image" src="https://github.com/user-attachments/assets/b62dc19b-0bce-4f5e-a240-23d6d75929c1" />
+
+#### 3.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: La variable nombre es declarada indicando que es de tipo String (val nombre: String) , pero se intenta imprimir (println(nombre)) sin haberle asignado nunca un valor.
+
+#### SOLUCIÓN: Kotlin requiere que las variables estén inicializadas (que tengan un valor asignado) antes de ser utilizadas para evitar errores de valores nulos (NullPointerException).
