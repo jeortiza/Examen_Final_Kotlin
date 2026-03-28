@@ -123,6 +123,26 @@ fun main() {
 
 
 
+## 7. EJERCICIO #7 - ERROR EN LA EXPRESIÓN WHEN Y CIERRE DE LLAVES
+
+#### 7.1 CODIGO CORREGIDO
+fun main() {
+    val nota = 18
+    when {
+        nota >= 18 -> println("Excelente")
+        nota >= 11 -> println("Aprobado")
+        else -> println("Desaprobado")
+    }
+} // Llave de cierre que faltaba
+
+#### 7.2 RESULTADO
+<img width="323" height="86" alt="image" src="https://github.com/user-attachments/assets/570dd557-219e-4f15-9729-237553318de1" />
+
+
+#### 7.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: Este fragmento tiene dos errores. Primero, comete el mismo error lógico que el ejercicio 4: usa when(nota) y luego intenta evaluar nota >= 18. Segundo, falta la llave de cierre } del bloque when y del main al final.
+
+#### SOLUCIÓN: Se debe remover el argumento del when para que acepte expresiones booleanas, y se deben cerrar las llaves correctamente para que el código pueda compilar.
 
 
 
