@@ -169,3 +169,25 @@ fun main() {
 
 
 
+
+## 9. EJERCICIO #9 - ERROR EN LA FUNCION "MOSTRAR"
+
+#### 9.1 CODIGO CORREGIDO
+fun mostrar(nombre: String) {
+    println(nombre)
+}
+fun main() {
+    mostrar("Junior")
+}
+
+#### 9.2 RESULTADO
+<img width="305" height="70" alt="image" src="https://github.com/user-attachments/assets/110d68f0-83f7-4cb5-8b0d-430529f6a1d8" />
+
+
+#### 9.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: La función mostrar exige recibir un parámetro obligatorio llamado nombre de tipo String. Sin embargo, al llamarla dentro del main(), se están dejando los paréntesis vacíos (mostrar()).
+
+#### SOLUCIÓN: Al invocar una función, debes pasarle todos los argumentos requeridos que se definieron en su creación.
+
+
+
