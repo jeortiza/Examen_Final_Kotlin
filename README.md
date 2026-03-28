@@ -98,6 +98,34 @@ fun main() {
 
 
 
+## 6. EJERCICIO #6 - ERROR EN LA ASIGNACIÓN DE LLAVES
+
+#### 6.1 CODIGO CORREGIDO
+fun main() {
+    val numero = 5
+    if (numero > 10) {
+        println("Mayor")
+    } else {
+        println("Menor")
+    }
+}
+
+#### 6.2 RESULTADO
+<img width="299" height="79" alt="image" src="https://github.com/user-attachments/assets/3e3eee6c-e0b4-48dc-bd7e-994760a67b21" />
+
+
+#### 6.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: Técnicamente, este código compilará sin problemas porque el bloque else solo tiene una línea de código (println("Menor")). Sin embargo, en evaluaciones de buenas prácticas, se considera un error o una mala práctica omitir las llaves {}.
+
+#### SOLUCIÓN: Siempre es recomendable encerrar los bloques de código if y else entre llaves {} para evitar errores lógicos a futuro si decides agregar más líneas, además de que mejora la legibilidad.
+
+
+
+
+
+
+
+
 
 
 
