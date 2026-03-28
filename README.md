@@ -19,16 +19,20 @@ fun main() {
 
 
 ## 2. EJERCICIO #2 - ERROR EN AL MOMENTO DE HACER COMPARACIONES E IGUALDADES
+
+#### 2.1 CODIGO CORREGIDO
 fun main() {
     val x = 10
     if (x == 10) {
         println("Correcto")
     }
 
-#### 1.2 RESULTADO
+#### 2.2 RESULTADO
 <img width="266" height="69" alt="image" src="https://github.com/user-attachments/assets/2b43c6ab-6902-4880-a42c-9f9797d651be" />
 
-#### 1.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### 2.3 EXPLICACIÓN DE LA CORRECCIÓN
 #### ERROR: En la condición del if, se está utilizando un solo signo de igual (x = 10). Un solo = es un operador de asignación, no de comparación.
 
 #### SOLUCIÓN: Para comparar si dos valores son iguales, debes usar el operador de igualdad que consta de dos signos iguales (==)
+
+
