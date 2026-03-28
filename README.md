@@ -78,5 +78,27 @@ fun main() {
 
 
 
+## 5. EJERCICIO #5 - ERROR EN EL BUCLE FOR
+
+#### 5.1 CODIGO CORREGIDO
+fun main() {
+    for (i in 1..5) {
+        println(i)
+    }
+}
+
+#### 5.2 RESULTADO
+<img width="256" height="150" alt="image" src="https://github.com/user-attachments/assets/39536896-27b7-4c7a-a909-232fa0160225" />
+
+
+#### 5.3 EXPLICACIÓN DE LA CORRECCIÓN
+#### ERROR: Se está intentando usar la sintaxis tradicional de un ciclo for de lenguajes como Java o C (for(i i=1 i <= 5; i++)). Esta sintaxis no existe en Kotlin.
+
+#### SOLUCIÓN: En Kotlin, los bucles for se manejan a través de rangos (ranges) utilizando la palabra clave in.
+
+
+
+
+
 
 
